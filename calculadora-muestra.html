@@ -14,44 +14,33 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description"
-    content="Calculadora gratuita de tamaño de muestra para investigaciones de mercado y estudios de tendencia, basada en la fórmula oficial de 'Making Monitoring and Evaluation Systems Work' (Banco Mundial).">
-  <title>Calculadora de tamaño de muestra para investigación de mercados | Jorge Ariel Loaiza</title>
+    content="Calculadora gratuita, interactiva y paso a paso del tamaño de muestra para poblaciones finitas e infinitas. Pensada para estudiantes universitarios que preparan encuestas de investigación de mercados, con ejemplos y explicación de cada variable.">
+  <title>Calculadora de tamaño de muestra: población finita e infinita | Jorge Ariel Loaiza</title>
   <link rel="canonical" href="https://arieljlj.github.io/calculadora-muestra.html">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Calculadora de tamaño de muestra para investigación de mercados">
+  <meta property="og:title" content="Calculadora de tamaño de muestra: población finita e infinita">
   <meta property="og:description"
-    content="Calculadora gratuita de tamaño de muestra para investigaciones de mercado y estudios de tendencia, basada en la fórmula oficial de 'Making Monitoring and Evaluation Systems Work' (Banco Mundial).">
+    content="Calculadora gratuita, interactiva y paso a paso del tamaño de muestra para poblaciones finitas e infinitas, con ejemplos pensados para estudiantes de investigación de mercados.">
   <meta property="og:url" content="https://arieljlj.github.io/calculadora-muestra.html">
   <meta property="og:image" content="https://arieljlj.github.io/assets/img/jorge-ariel-loaiza.jpg">
   <meta property="og:locale" content="es_ES">
   <meta property="og:site_name" content="Jorge Ariel Loaiza | Portal académico">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Calculadora de tamaño de muestra para investigación de mercados">
+  <meta name="twitter:title" content="Calculadora de tamaño de muestra: población finita e infinita">
   <meta name="twitter:description"
-    content="Calculadora gratuita de tamaño de muestra para investigaciones de mercado y estudios de tendencia, basada en la fórmula oficial del Banco Mundial.">
+    content="Calculadora gratuita e interactiva del tamaño de muestra para poblaciones finitas e infinitas, con ejemplos paso a paso para estudiantes.">
   <meta name="twitter:image" content="https://arieljlj.github.io/assets/img/jorge-ariel-loaiza.jpg">
   <link rel="stylesheet" href="assets/css/site.css">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  "name": "Calculadora de tamaño de muestra para investigación de mercados",
+  "name": "Calculadora de tamaño de muestra: población finita e infinita",
   "applicationCategory": "EducationalApplication",
   "operatingSystem": "Cualquiera (aplicación web)",
   "url": "https://arieljlj.github.io/calculadora-muestra.html",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-  "creator": { "@type": "Person", "name": "Jorge Ariel Loaiza Loaiza", "url": "https://arieljlj.github.io/" },
-  "isBasedOn": {
-    "@type": "Book",
-    "name": "Making Monitoring and Evaluation Systems Work: A Capacity Development Toolkit",
-    "author": [
-      { "@type": "Person", "name": "Marelize Prestidge" },
-      { "@type": "Person", "name": "Jody Zall Kusek" }
-    ],
-    "publisher": { "@type": "Organization", "name": "World Bank" },
-    "datePublished": "2026",
-    "url": "https://documentos.bancomundial.org/es/publication/documents-reports/documentdetail/708391468331216900"
-  }
+  "creator": { "@type": "Person", "name": "Jorge Ariel Loaiza Loaiza", "url": "https://arieljlj.github.io/" }
 }
 </script>
   <script type="application/ld+json">
@@ -76,188 +65,185 @@
     <nav aria-label="Ruta de navegación" class="breadcrumb"><a href="investigacion.html">Investigación</a> › <span
         aria-current="page">Calculadora de tamaño de muestra</span></nav>
     <p class="eyebrow">Investigación · Herramientas</p>
-    <h1>Calculadora de tamaño de muestra para investigación de mercados</h1>
-    <p class="intro">Herramienta gratuita para estimar cuántas personas debe incluir una encuesta de mercado o un
-      estudio de tendencia para detectar, con confianza estadística, un cambio real entre dos rondas de medición.
-      Implementa de forma exacta la fórmula de la Guía Técnica C8-2 del manual del Banco Mundial <em>Making
-        Monitoring and Evaluation Systems Work</em> (Prestidge, Marelize, Kusek, Jody Zall, 2026).</p>
-
-    <section>
-      <h2 id="para-que-sirve">¿Para qué sirve esta calculadora?</h2>
-      <p>En investigación de mercados es habitual repetir una misma medición en rondas sucesivas: por ejemplo, la
-        proporción de clientes que reconoce una marca antes y después de una campaña, o el porcentaje de
-        consumidores que prefiere un producto en dos períodos distintos. Para que esa comparación sea confiable,
-        la muestra de cada ronda debe ser lo bastante grande como para distinguir un cambio real del simple
-        ruido estadístico.</p>
-      <p>Esta calculadora responde exactamente a esa pregunta: dada una prevalencia inicial (P<sub>1</sub>) y la
-        magnitud del cambio que se quiere poder detectar, calcula el tamaño de muestra mínimo (n) requerido en
-        cada ronda de la encuesta, siguiendo el procedimiento estándar descrito en la guía técnica C8-2
-        "Calculate a Sample Size" del manual del Banco Mundial (Prestidge, Marelize, Kusek, Jody Zall, 2026).</p>
-    </section>
-
-    <section>
-      <h2 id="formula">La fórmula de referencia</h2>
-      <p>Para encuestas periódicas diseñadas para medir cambios y tendencias en el comportamiento a lo largo del
-        tiempo (estudios longitudinales o de rondas sucesivas), el manual establece la siguiente fórmula oficial
-        (Prestidge, Marelize, Kusek, Jody Zall, 2026):</p>
-      <div class="formula" role="img"
-        aria-label="n igual a D multiplicado por, entre corchetes, Z sub uno menos alfa por raíz de 2 P por (1 menos P), más Z sub uno menos beta por raíz de P uno por (1 menos P uno) más P dos por (1 menos P dos), todo al cuadrado, dividido entre delta al cuadrado">
-        <span class="term">n</span> = D ·
-        [ Z<sub>1−α</sub>·√(2P(1−P)) + Z<sub>1−β</sub>·√(P<sub>1</sub>(1−P<sub>1</sub>)+P<sub>2</sub>(1−P<sub>2</sub>)) ]²
-        ⁄ Δ²
-      </div>
-      <dl>
-        <dt>n</dt>
-        <dd>El tamaño de muestra requerido en cada ronda de la encuesta.</dd>
-        <dt>D (efecto de diseño)</dt>
-        <dd>Factor de multiplicación que compensa el uso de muestreos complejos (por ejemplo, muestreo por
-          conglomerados) en lugar de muestreo aleatorio simple. Si no se usa un diseño por conglomerados, se
-          asume D = 1.0.</dd>
-        <dt>P<sub>1</sub> (prevalencia en la línea base)</dt>
-        <dd>La proporción estimada de la variable o comportamiento clave al inicio del estudio (por ejemplo, 10%
-          se ingresa como 0.10).</dd>
-        <dt>P<sub>2</sub> (proporción futura esperada)</dt>
-        <dd>La proporción que se anticipa alcanzar en la siguiente ronda, de modo que la diferencia entre
-          P<sub>2</sub> y P<sub>1</sub> sea el cambio mínimo que se desea poder detectar.</dd>
-        <dt>P (proporción promedio)</dt>
-        <dd>P = (P<sub>1</sub> + P<sub>2</sub>) / 2.</dd>
-        <dt>Δ² (diferencia cuadrática)</dt>
-        <dd>El cuadrado de la diferencia absoluta entre ambas proporciones: Δ² = (P<sub>2</sub> − P<sub>1</sub>)².</dd>
-        <dt>Z<sub>1−α</sub> (puntuación Z de significancia)</dt>
-        <dd>El valor de la distribución normal correspondiente al nivel de confianza con el que se desea concluir
-          que un cambio observado no se debe al azar. El manual emplea, como estándar, un nivel de confianza del
-          95% a una cola, equivalente a Z<sub>1−α</sub> = 1.645.</dd>
-        <dt>Z<sub>1−β</sub> (puntuación Z de poder)</dt>
-        <dd>El valor correspondiente al poder estadístico con el que se desea detectar un cambio real si este
-          ocurrió. El manual utiliza como estándar un poder del 80% (error Tipo II de β = 0.20), equivalente a
-          Z<sub>1−β</sub> = 0.84.</dd>
-      </dl>
-      <aside class="notice"><strong>Ejemplo verificado del manual:</strong> con P<sub>1</sub> = 20% y un cambio a
-        detectar del 10% (P<sub>2</sub> = 30%), la fórmula arroja n ≈ 231, el mismo valor que reporta la Tabla
-        C8-5 del libro (Prestidge, Marelize, Kusek, Jody Zall, 2026).</aside>
-    </section>
+    <h1>¿Cuántas personas debo encuestar?</h1>
+    <p class="intro">Calculadora gratuita e interactiva para estimar el tamaño de muestra de una encuesta de
+      investigación de mercados. No necesitas conocimientos previos de estadística: completa los campos, elige
+      si conoces el tamaño total de tu población y obtén el número de encuestas recomendado, explicado paso a
+      paso.</p>
 
     <section>
       <h2 id="calculadora">Calculadora interactiva</h2>
-      <p>Completa los siguientes campos con los parámetros de tu estudio. Los niveles de confianza (95%) y poder
-        estadístico (80%) usados por el manual quedan fijos, siguiendo el estándar del libro.</p>
-      <form class="calc-tool" id="form-muestra" novalidate>
-        <div class="calc-form">
+      <p>Primero elige el tipo de población de tu estudio. Si no estás seguro, lee la
+        <a href="#finita-o-infinita">guía para decidir</a> más abajo.</p>
+
+      <div class="calc-tool">
+        <div class="mode-tabs" role="tablist" aria-label="Tipo de población">
+          <button type="button" id="tab-infinita" class="mode-tab is-active" role="tab" aria-selected="true"
+            aria-controls="panel-infinita">Población infinita o desconocida</button>
+          <button type="button" id="tab-finita" class="mode-tab" role="tab" aria-selected="false"
+            aria-controls="panel-finita">Población finita (conocida)</button>
+        </div>
+        <p class="field-help mode-hint">
+          <strong>Infinita o desconocida:</strong> no sabes o no importa cuántas personas componen el universo
+          total (por ejemplo, "consumidores de café en Colombia"). <strong>Finita:</strong> conoces el número
+          exacto o aproximado de tu población (por ejemplo, "los 850 empleados de mi empresa").
+        </p>
+
+        <form class="calc-form" id="form-muestra" novalidate>
           <div>
-            <label for="p1">Prevalencia en la línea base (P<sub>1</sub>)</label>
-            <input type="number" id="p1" name="p1" min="0.01" max="0.99" step="0.01" value="0.20" required>
-            <span class="field-help">Proporción estimada hoy, entre 0.01 y 0.99 (ej. 0.20 = 20%).</span>
+            <label for="confianza">Nivel de confianza</label>
+            <select id="confianza" name="confianza">
+              <option value="1.645">90% (Z = 1.645)</option>
+              <option value="1.96" selected>95% (Z = 1.96) — el más usado</option>
+              <option value="2.576">99% (Z = 2.576)</option>
+            </select>
+            <span class="field-help">Qué tan seguro quieres estar de que el resultado real de la población está
+              dentro del margen de error. 95% es el estándar en investigación de mercados.</span>
           </div>
           <div>
-            <label for="cambio">Cambio mínimo a detectar</label>
-            <input type="number" id="cambio" name="cambio" min="0.01" max="0.50" step="0.01" value="0.10" required>
-            <span class="field-help">Magnitud del cambio entre rondas, entre 0.01 y 0.50 (ej. 0.10 = 10 puntos).</span>
+            <label for="proporcion">Proporción esperada (p)</label>
+            <input type="number" id="proporcion" name="proporcion" min="0.01" max="0.99" step="0.01" value="0.5"
+              required>
+            <span class="field-help">Qué porcentaje de la población, expresado como decimal, esperas que responda
+              o se comporte de cierta forma. Si no lo sabes, <strong>usa 0.5</strong>: es la opción más segura,
+              porque genera la muestra más grande posible.</span>
           </div>
           <div>
-            <label for="deff">Efecto de diseño (D)</label>
-            <input type="number" id="deff" name="deff" min="1" step="0.1" value="1.0" required>
-            <span class="field-help">Usa 1.0 para muestreo aleatorio simple; más alto si hay muestreo por
-              conglomerados.</span>
+            <label for="margen">Margen de error (e)</label>
+            <input type="number" id="margen" name="margen" min="0.01" max="0.30" step="0.01" value="0.05" required>
+            <span class="field-help">Cuánto puede desviarse el resultado de la encuesta respecto al valor real de
+              la población. En encuestas de mercado suele usarse 0.05 (± 5 puntos porcentuales).</span>
           </div>
-          <div>
-            <label for="nores">Tasa de no respuesta esperada</label>
-            <input type="number" id="nores" name="nores" min="0" max="0.90" step="0.01" value="0.00" required>
-            <span class="field-help">Proporción estimada de rechazo o ausencia en campo, entre 0 y 0.90.</span>
+          <div id="campo-poblacion" hidden>
+            <label for="poblacion">Tamaño de la población (N)</label>
+            <input type="number" id="poblacion" name="poblacion" min="2" step="1" value="1000">
+            <span class="field-help">El número total de personas, empresas o unidades que forman tu universo de
+              estudio (por ejemplo, todos los clientes registrados en tu base de datos).</span>
           </div>
           <div class="calc-actions">
             <button type="submit">Calcular tamaño de muestra</button>
             <button type="button" class="secondary" id="btn-reset">Restablecer ejemplo</button>
           </div>
-        </div>
+        </form>
+
         <div class="calc-results" id="resultados" hidden aria-live="polite">
           <h3>Resultado del cálculo</h3>
           <dl class="result-grid">
             <div>
-              <dt>Prevalencia objetivo (P₂)</dt>
-              <dd id="res-p2">—</dd>
+              <dt>Valor Z usado</dt>
+              <dd id="res-z">—</dd>
             </div>
             <div>
-              <dt>Proporción promedio (P)</dt>
-              <dd id="res-pprom">—</dd>
+              <dt>Varianza p(1−p)</dt>
+              <dd id="res-var">—</dd>
             </div>
             <div>
-              <dt>Z confianza (95%)</dt>
-              <dd>1.645</dd>
-            </div>
-            <div>
-              <dt>Z poder (80%)</dt>
-              <dd>0.84</dd>
-            </div>
-            <div>
-              <dt>Muestra base (teórica)</dt>
-              <dd id="res-base">—</dd>
+              <dt>Tipo de población</dt>
+              <dd id="res-tipo">—</dd>
             </div>
             <div class="result-highlight">
-              <dt>Muestra final recomendada</dt>
+              <dt>Muestra recomendada (n)</dt>
               <dd id="res-final">—</dd>
             </div>
           </dl>
+          <p id="res-explicacion" class="field-help"></p>
         </div>
         <p class="calc-error" id="error-muestra" hidden role="alert"></p>
-      </form>
-    </section>
-
-    <section>
-      <h2 id="tabla-referencia">Tabla de referencia rápida</h2>
-      <p>Tamaño de muestra base (n), asumiendo 95% de confianza (Z=1.645), 80% de poder estadístico (Z=0.84),
-        efecto de diseño D=1 y sin ajuste por no respuesta. Reproduce la Tabla C8-5 del manual (Prestidge,
-        Marelize, Kusek, Jody Zall, 2026).</p>
-      <div class="table-scroll">
-        <table class="calc-table-el">
-          <caption>Fuente: cálculo propio con la fórmula de la Guía Técnica C8-2 (Prestidge, Marelize, Kusek, Jody
-            Zall, 2026).</caption>
-          <thead>
-            <tr>
-              <th scope="col">Prevalencia (P₁)</th>
-              <th scope="col">Cambio 5%</th>
-              <th scope="col">Cambio 10%</th>
-              <th scope="col">Cambio 15%</th>
-              <th scope="col">Cambio 20%</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><th scope="row">10%</th><td>539</td><td>156</td><td>78</td><td>48</td></tr>
-            <tr><th scope="row">20%</th><td>860</td><td>231</td><td>108</td><td>64</td></tr>
-            <tr><th scope="row">30%</th><td>1083</td><td>280</td><td>128</td><td>73</td></tr>
-            <tr><th scope="row">40%</th><td>1206</td><td>305</td><td>136</td><td>76</td></tr>
-            <tr><th scope="row">50%</th><td>1231</td><td>305</td><td>133</td><td>73</td></tr>
-            <tr><th scope="row">60%</th><td>1157</td><td>280</td><td>119</td><td>64</td></tr>
-            <tr><th scope="row">70%</th><td>984</td><td>231</td><td>95</td><td>48</td></tr>
-            <tr><th scope="row">80%</th><td>712</td><td>156</td><td>59</td><td>27</td></tr>
-          </tbody>
-        </table>
       </div>
     </section>
 
     <section>
-      <h2 id="script-python">Descarga el script en Python</h2>
-      <p>Si prefieres ejecutar los cálculos desde la línea de comandos o integrarlos en tus propios reportes de
-        investigación de mercados, puedes descargar <code>calculadora_muestra.py</code>: replica exactamente los
-        mismos cálculos y la misma tabla de referencia que esta página, en Python 3 puro (sin dependencias
-        externas).</p>
-      <p><a class="button" href="assets/tools/calculadora_muestra.py" download>Descargar calculadora_muestra.py</a>
-      </p>
-      <p>Uso desde la terminal:</p>
-      <div class="formula"><code>python3 calculadora_muestra.py --p1 0.15 --cambio 0.05 --deff 2.0 --nores 0.10</code></div>
-      <p>Ejecutado sin argumentos, o con la bandera <code>--tabla</code>, imprime la tabla de referencia completa
-        en la consola.</p>
+      <h2 id="variables">Qué significa cada variable (con ejemplos)</h2>
+      <p>Estas son las cuatro piezas que usa la calculadora. Entenderlas te permite justificar tu tamaño de
+        muestra en el diseño metodológico de tu investigación.</p>
+      <dl>
+        <dt>N — Tamaño de la población</dt>
+        <dd>El universo completo de personas, empresas o casos sobre los que quieres concluir. <em>Ejemplo:</em>
+          si estudias la satisfacción de los 1.200 estudiantes matriculados en un programa, N = 1200. Si estudias
+          "consumidores de gaseosas en Colombia", el universo es tan grande que se trata como
+          <strong>infinito</strong> (no necesitas el dato exacto).</dd>
+        <dt>Z — Valor de confianza</dt>
+        <dd>Indica qué tan segura quieres estar de que, si repitieras la encuesta muchas veces, el resultado real
+          caería dentro del margen de error que definiste. <em>Ejemplo:</em> con 95% de confianza (Z = 1.96), si
+          encuestas y obtienes que "40% prefiere la marca A", puedes afirmar que el valor real de toda la
+          población está entre 35% y 45% (con un margen de error del 5%), y estar en lo correcto en 95 de cada
+          100 estudios similares.</dd>
+        <dt>p — Proporción esperada</dt>
+        <dd>Tu mejor estimación previa del porcentaje de la población que tiene la característica que estudias.
+          <em>Ejemplo:</em> si una encuesta anterior mostró que el 30% de tus clientes conoce tu nueva línea de
+          producto, usa p = 0.30. Si es la primera vez que investigas el tema y no tienes ninguna pista, usa
+          <strong>p = 0.5</strong>: es la opción conservadora que te da el tamaño de muestra más grande (y por
+          tanto más seguro).</dd>
+        <dt>e — Margen de error</dt>
+        <dd>Cuánta diferencia estás dispuesto a aceptar entre lo que mide tu encuesta y el valor real de la
+          población. <em>Ejemplo:</em> un margen de error de 0.05 (5%) significa que si tu encuesta arroja 60% de
+          aceptación, el valor real probablemente está entre 55% y 65%. Un margen más pequeño (por ejemplo 0.03)
+          da resultados más precisos, pero exige encuestar a muchas más personas.</dd>
+      </dl>
+    </section>
+
+    <section id="finita-o-infinita">
+      <h2>¿Población finita o infinita? Cómo decidir</h2>
+      <p>En la práctica, "infinito" no significa un número ilimitado de personas: es una simplificación
+        estadística que se usa cuando la población es tan grande, o tan difícil de contar con exactitud, que no
+        afecta de forma relevante el cálculo. Una guía práctica y ampliamente usada en investigación de mercados
+        es la siguiente:</p>
+      <ul>
+        <li><strong>Usa la fórmula de población finita</strong> cuando conoces (o puedes estimar con razonable
+          precisión) el tamaño exacto de tu universo: la lista de clientes de una empresa, los estudiantes
+          matriculados en una universidad, los empleados de una organización, los negocios registrados en una
+          cámara de comercio local, etc.</li>
+        <li><strong>Usa la fórmula de población infinita</strong> cuando el universo es muy grande o no tienes
+          forma práctica de contarlo con precisión: "los habitantes de una ciudad grande", "los consumidores de
+          un producto de consumo masivo en un país", "los usuarios de internet en Latinoamérica".</li>
+        <li>Como referencia rápida: si tu población conocida (N) supera aproximadamente <strong>100.000</strong>
+          personas, el resultado de la fórmula finita y la infinita prácticamente coinciden, así que puedes
+          usar la infinita para simplificar.</li>
+      </ul>
     </section>
 
     <section>
-      <h2 id="fuente">Fuente y referencia bibliográfica</h2>
-      <p>Tanto la fórmula matemática como la tabla de referencia de esta herramienta provienen de la Guía Técnica
-        C8-2 "Calculate a Sample Size" del siguiente manual, publicado por el Banco Mundial:</p>
-      <p class="citation">Prestidge, Marelize, Kusek, Jody Zall. (2026). <em>Making monitoring and evaluation
-          systems work: a capacity development toolkit</em>. World Bank. <a
-          href="https://documentos.bancomundial.org/es/publication/documents-reports/documentdetail/708391468331216900"
-          target="_blank" rel="noopener">https://documentos.bancomundial.org/es/publication/documents-reports/documentdetail/708391468331216900</a>
-      </p>
-      <p>Cítese en el texto como: <em>(Prestidge, Marelize, Kusek, Jody Zall, 2026)</em>.</p>
+      <h2 id="ejemplo-resuelto">Ejemplo resuelto paso a paso</h2>
+      <p>Imagina que eres estudiante y quieres medir qué porcentaje de los clientes de una cadena local de
+        cafeterías (2.500 clientes registrados en el programa de fidelización) probaría un nuevo producto. No
+        tienes estudios previos, así que usarás la opción conservadora p = 0.5, con 95% de confianza y un margen
+        de error del 5%.</p>
+      <ol>
+        <li><strong>Población:</strong> es conocida y manejable (N = 2.500), así que se trata como
+          <strong>finita</strong>.</li>
+        <li><strong>Datos:</strong> Z = 1.96 (95%), p = 0.5, e = 0.05, N = 2500.</li>
+        <li><strong>Fórmula:</strong> n = N·Z²·p(1−p) ⁄ [ e²·(N−1) + Z²·p(1−p) ]</li>
+        <li><strong>Resultado:</strong> n ≈ 334 encuestas. Es decir, encuestando a 334 de los 2.500 clientes
+          (con muestreo aleatorio), puedes estimar con 95% de confianza y un margen de error de ±5% qué
+          proporción de todos los clientes probaría el nuevo producto.</li>
+      </ol>
+      <aside class="notice"><strong>Compruébalo tú mismo:</strong> ingresa N = 2500, p = 0.5, e = 0.05 y 95% de
+        confianza en la calculadora de arriba, en modo "Población finita", y verifica que obtienes el mismo
+        resultado.</aside>
+    </section>
+
+    <section>
+      <h2 id="tendencias">¿Necesitas comparar dos mediciones en el tiempo?</h2>
+      <p>Esta calculadora estima cuántas personas encuestar para conocer una proporción en un único momento. Si
+        en cambio necesitas diseñar un estudio de <strong>tendencia</strong> —por ejemplo, medir el conocimiento
+        de una marca antes y después de una campaña, para detectar si el cambio entre ambas rondas es real y no
+        producto del azar—, necesitas una fórmula distinta, basada en la Guía Técnica C8-2 del Banco Mundial.</p>
+      <p><a class="button" href="calculadora-tendencias.html">Ir a la calculadora de cambios entre rondas →</a></p>
+    </section>
+
+    <section>
+      <h2 id="recomendaciones">Recomendaciones prácticas para tu investigación</h2>
+      <ul>
+        <li>Redondea siempre <strong>hacia arriba</strong> el resultado (un decimal de 332.4 se convierte en
+          333 encuestas): nunca se recomienda una fracción de persona.</li>
+        <li>El tamaño de muestra calculado es el mínimo recomendado; si esperas rechazos o encuestas incompletas,
+          incrementa el objetivo (por ejemplo, un 10-15% adicional) para compensar la no respuesta.</li>
+        <li>Un margen de error más pequeño y una confianza más alta siempre exigen una muestra más grande: hay
+          una relación directa entre precisión y esfuerzo de recolección de datos.</li>
+        <li>El tamaño de muestra depende de la variabilidad de la población (p) y de la precisión que exijas
+          (e), <strong>no</strong> depende, en la práctica, de si la población total es de 50.000 o 5 millones
+          (por eso, más allá de cierto tamaño, la fórmula infinita es suficiente).</li>
+      </ul>
     </section>
   </main>
   <footer>© 2026 Jorge Ariel Loaiza Loaiza · <a href="index.html">Inicio</a></footer>
@@ -265,32 +251,36 @@
   <script>
     (function () {
       "use strict";
-      var Z_ALPHA = 1.645, Z_BETA = 0.84;
 
-      function calcularMuestra(p1, cambio, D, nores) {
-        var p2 = p1 + cambio;
-        if (p2 < 0 || p2 > 1) {
-          p2 = p1 - cambio;
-          if (p2 < 0 || p2 > 1) {
-            throw new Error("La proporción resultante (P2) debe estar entre 0 y 1. Ajusta P1 o el cambio.");
-          }
-        }
-        var pProm = (p1 + p2) / 2;
-        var delta = Math.abs(p2 - p1);
-        var deltaSq = delta * delta;
-        var termino1 = Z_ALPHA * Math.sqrt(2 * pProm * (1 - pProm));
-        var termino2 = Z_BETA * Math.sqrt(p1 * (1 - p1) + p2 * (1 - p2));
-        var numerador = Math.pow(termino1 + termino2, 2);
-        var nBase = D * numerador / deltaSq;
-        var nFinal = nores > 0 ? nBase / (1 - nores) : nBase;
-        return {
-          p2: p2, pProm: pProm,
-          nBase: Math.round(nBase),
-          nFinal: Math.ceil(nFinal)
-        };
+      var tabInfinita = document.getElementById("tab-infinita");
+      var tabFinita = document.getElementById("tab-finita");
+      var campoPoblacion = document.getElementById("campo-poblacion");
+      var poblacionInput = document.getElementById("poblacion");
+      var modoActual = "infinita";
+
+      function activarModo(modo) {
+        modoActual = modo;
+        var esFinita = modo === "finita";
+        tabFinita.classList.toggle("is-active", esFinita);
+        tabFinita.setAttribute("aria-selected", esFinita ? "true" : "false");
+        tabInfinita.classList.toggle("is-active", !esFinita);
+        tabInfinita.setAttribute("aria-selected", !esFinita ? "true" : "false");
+        campoPoblacion.hidden = !esFinita;
+        poblacionInput.required = esFinita;
       }
 
-      function pct(x) { return (x * 100).toFixed(2) + "%"; }
+      tabInfinita.addEventListener("click", function () { activarModo("infinita"); });
+      tabFinita.addEventListener("click", function () { activarModo("finita"); });
+
+      function calcularInfinita(z, p, e) {
+        return (z * z * p * (1 - p)) / (e * e);
+      }
+
+      function calcularFinita(z, p, e, n) {
+        var numerador = n * z * z * p * (1 - p);
+        var denominador = e * e * (n - 1) + z * z * p * (1 - p);
+        return numerador / denominador;
+      }
 
       var form = document.getElementById("form-muestra");
       var resultados = document.getElementById("resultados");
@@ -311,52 +301,62 @@
         ev.preventDefault();
         limpiarError();
 
-        var p1 = parseFloat(document.getElementById("p1").value);
-        var cambio = parseFloat(document.getElementById("cambio").value);
-        var deff = parseFloat(document.getElementById("deff").value);
-        var nores = parseFloat(document.getElementById("nores").value);
+        var z = parseFloat(document.getElementById("confianza").value);
+        var p = parseFloat(document.getElementById("proporcion").value);
+        var e = parseFloat(document.getElementById("margen").value);
+        var n = parseFloat(poblacionInput.value);
 
-        if ([p1, cambio, deff, nores].some(function (v) { return isNaN(v); })) {
+        if ([z, p, e].some(function (v) { return isNaN(v); })) {
           mostrarError("Completa todos los campos con valores numéricos.");
           return;
         }
-        if (p1 <= 0 || p1 >= 1) {
-          mostrarError("La prevalencia P1 debe estar entre 0.01 y 0.99.");
+        if (p <= 0 || p >= 1) {
+          mostrarError("La proporción esperada (p) debe estar entre 0.01 y 0.99.");
           return;
         }
-        if (cambio <= 0 || cambio > 0.5) {
-          mostrarError("El cambio mínimo a detectar debe estar entre 0.01 y 0.50.");
-          return;
-        }
-        if (deff < 1) {
-          mostrarError("El efecto de diseño (D) debe ser mayor o igual a 1.");
-          return;
-        }
-        if (nores < 0 || nores >= 1) {
-          mostrarError("La tasa de no respuesta debe estar entre 0 y 0.90.");
+        if (e <= 0 || e > 0.3) {
+          mostrarError("El margen de error (e) debe estar entre 0.01 y 0.30.");
           return;
         }
 
-        try {
-          var res = calcularMuestra(p1, cambio, deff, nores);
-          document.getElementById("res-p2").textContent = pct(res.p2);
-          document.getElementById("res-pprom").textContent = pct(res.pProm);
-          document.getElementById("res-base").textContent = res.nBase.toLocaleString("es-CO");
-          document.getElementById("res-final").textContent = res.nFinal.toLocaleString("es-CO") + " encuestas";
-          resultados.hidden = false;
-        } catch (e) {
-          mostrarError(e.message);
+        var resultado, tipoTexto, explicacion;
+
+        if (modoActual === "finita") {
+          if (isNaN(n) || n < 2) {
+            mostrarError("El tamaño de la población (N) debe ser un número mayor o igual a 2.");
+            return;
+          }
+          resultado = calcularFinita(z, p, e, n);
+          tipoTexto = "Finita (N = " + n.toLocaleString("es-CO") + ")";
+          explicacion = "Con una población de " + n.toLocaleString("es-CO") + " personas, necesitas encuestar " +
+            "a este número de ellas para lograr el nivel de confianza y margen de error elegidos.";
+        } else {
+          resultado = calcularInfinita(z, p, e);
+          tipoTexto = "Infinita o desconocida";
+          explicacion = "Como no limitaste el universo a un tamaño conocido, este es el número mínimo de " +
+            "personas a encuestar, sin importar qué tan grande sea la población real.";
         }
+
+        var nFinal = Math.ceil(resultado);
+        document.getElementById("res-z").textContent = z.toFixed(3);
+        document.getElementById("res-var").textContent = (p * (1 - p)).toFixed(4);
+        document.getElementById("res-tipo").textContent = tipoTexto;
+        document.getElementById("res-final").textContent = nFinal.toLocaleString("es-CO") + " encuestas";
+        document.getElementById("res-explicacion").textContent = explicacion;
+        resultados.hidden = false;
       });
 
       document.getElementById("btn-reset").addEventListener("click", function () {
-        document.getElementById("p1").value = "0.20";
-        document.getElementById("cambio").value = "0.10";
-        document.getElementById("deff").value = "1.0";
-        document.getElementById("nores").value = "0.00";
+        activarModo("infinita");
+        document.getElementById("confianza").value = "1.96";
+        document.getElementById("proporcion").value = "0.5";
+        document.getElementById("margen").value = "0.05";
+        poblacionInput.value = "1000";
         limpiarError();
         resultados.hidden = true;
       });
+
+      activarModo("infinita");
     })();
   </script>
 </body>
