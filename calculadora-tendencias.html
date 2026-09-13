@@ -14,19 +14,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description"
-    content="Calculadora gratuita e interactiva del tamaño de muestra para detectar cambios entre dos rondas de una encuesta (estudios de tendencia), basada en la fórmula oficial de 'Making Monitoring and Evaluation Systems Work' (Banco Mundial), con ejemplos paso a paso.">
-  <title>Calculadora de tamaño de muestra para estudios de tendencia | Jorge Ariel Loaiza</title>
+    content="Calculadora GRATIS de tamaño de muestra para estudios de tendencia y encuestas de seguimiento: detecta si un cambio entre dos rondas de medición es real o simple azar. Basada en la fórmula oficial del Banco Mundial, explicada paso a paso con ejemplos para estudiantes.">
+  <meta name="keywords"
+    content="calculadora tamaño de muestra tendencia, tamaño de muestra comparar dos proporciones, fórmula Banco Mundial tamaño de muestra, detectar cambio entre encuestas, poder estadístico encuestas, tamaño de muestra seguimiento de marca">
+  <title>Calculadora de Tamaño de Muestra para Estudios de Tendencia GRATIS | Jorge Ariel Loaiza</title>
   <link rel="canonical" href="https://arieljlj.github.io/calculadora-tendencias.html">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Calculadora de tamaño de muestra para estudios de tendencia">
+  <meta property="og:title" content="Calculadora de Tamaño de Muestra para Estudios de Tendencia">
   <meta property="og:description"
-    content="Calculadora gratuita e interactiva del tamaño de muestra para detectar cambios reales entre dos rondas de medición, basada en la fórmula oficial del Banco Mundial, con ejemplos paso a paso.">
+    content="Gratis e interactiva: calcula cuántas personas encuestar en cada ronda para detectar si un cambio es real, con la fórmula oficial del Banco Mundial y ejemplos paso a paso.">
   <meta property="og:url" content="https://arieljlj.github.io/calculadora-tendencias.html">
   <meta property="og:image" content="https://arieljlj.github.io/assets/img/jorge-ariel-loaiza.jpg">
   <meta property="og:locale" content="es_ES">
   <meta property="og:site_name" content="Jorge Ariel Loaiza | Portal académico">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Calculadora de tamaño de muestra para estudios de tendencia">
+  <meta name="twitter:title" content="Calculadora de Tamaño de Muestra para Estudios de Tendencia">
   <meta name="twitter:description"
     content="Calculadora gratuita de tamaño de muestra para detectar cambios entre dos rondas de una encuesta, basada en la fórmula del Banco Mundial.">
   <meta name="twitter:image" content="https://arieljlj.github.io/assets/img/jorge-ariel-loaiza.jpg">
@@ -41,6 +43,9 @@
   "url": "https://arieljlj.github.io/calculadora-tendencias.html",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
   "creator": { "@type": "Person", "name": "Jorge Ariel Loaiza Loaiza", "url": "https://arieljlj.github.io/" },
+  "keywords": "tamaño de muestra tendencia, comparar dos rondas de encuesta, fórmula Banco Mundial, poder estadístico, seguimiento de marca",
+  "inLanguage": "es",
+  "dateModified": "2026-09-13",
   "isBasedOn": {
     "@type": "Book",
     "name": "Making Monitoring and Evaluation Systems Work: A Capacity Development Toolkit",
@@ -65,6 +70,34 @@
   ]
 }
 </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Cuándo debo usar la calculadora de tendencia en lugar de la calculadora clásica?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Úsala cuando tu investigación compara dos mediciones en el tiempo, por ejemplo el conocimiento de una marca antes y después de una campaña. Si solo necesitas estimar una proporción en un único momento, usa la calculadora clásica de población finita o infinita." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿De dónde sale la fórmula que usa esta calculadora?",
+      "acceptedAnswer": { "@type": "Answer", "text": "De la Guía Técnica C8-2 'Calculate a Sample Size' del manual del Banco Mundial Making Monitoring and Evaluation Systems Work (Prestidge y Kusek, 2026), un estándar reconocido para el diseño de estudios de seguimiento y evaluación." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué es el efecto de diseño (D) y cuándo debo cambiarlo?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Es un factor que compensa el uso de muestreos complejos, como el muestreo por conglomerados, en lugar de muestreo aleatorio simple. Si tu encuesta selecciona personas al azar de toda la población, usa D = 1.0; si encuestas por grupos completos (barrios, sucursales), usa un valor mayor, típicamente entre 1.5 y 2.0." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Esta calculadora es gratuita y puedo usarla para mi tesis?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sí, es gratuita, no requiere registro y puedes usarla libremente para diseñar la metodología de tu tesis, artículo o trabajo de grado. Al final de la página encontrarás cómo citarla correctamente." }
+    }
+  ]
+}
+</script>
 </head>
 
 <body><a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -78,12 +111,27 @@
       <a href="calculadora-muestra.html">Calculadora de tamaño de muestra</a> ›
       <span aria-current="page">Estudios de tendencia</span></nav>
     <p class="eyebrow">Investigación · Herramientas</p>
-    <h1>Calculadora de tamaño de muestra para estudios de tendencia</h1>
+    <h1>Calculadora de Tamaño de Muestra Gratis para Estudios de Tendencia</h1>
     <p class="intro">¿Necesitas comparar dos mediciones en el tiempo —por ejemplo, el conocimiento de una marca
       antes y después de una campaña— y saber si el cambio observado es real o solo azar? Esta calculadora
       gratuita e interactiva estima cuántas personas encuestar en cada ronda para detectarlo con confianza
       estadística, implementando la fórmula de la Guía Técnica C8-2 del manual del Banco Mundial <em>Making
         Monitoring and Evaluation Systems Work</em> (Prestidge, Marelize, Kusek, Jody Zall, 2026).</p>
+    <p class="breadcrumb">Última actualización: 13 de septiembre de 2026 · Jorge Ariel Loaiza Loaiza</p>
+
+    <nav class="toc" aria-label="Tabla de contenidos">
+      <p>En esta página</p>
+      <ol>
+        <li><a href="#calculadora">Calculadora interactiva</a></li>
+        <li><a href="#para-que-sirve">¿Para qué sirve esta calculadora?</a></li>
+        <li><a href="#variables">Qué significa cada variable (con ejemplos)</a></li>
+        <li><a href="#formula">La fórmula de referencia</a></li>
+        <li><a href="#ejemplo-resuelto">Ejemplo resuelto paso a paso</a></li>
+        <li><a href="#tabla-referencia">Tabla de referencia rápida</a></li>
+        <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
+        <li><a href="#como-citar">Cómo citar esta calculadora</a></li>
+      </ol>
+    </nav>
 
     <section>
       <h2 id="calculadora">Calculadora interactiva</h2>
@@ -308,6 +356,57 @@
           target="_blank" rel="noopener">https://documentos.bancomundial.org/es/publication/documents-reports/documentdetail/708391468331216900</a>
       </p>
       <p>Cítese en el texto como: <em>(Prestidge, Marelize, Kusek, Jody Zall, 2026)</em>.</p>
+    </section>
+
+    <section>
+      <h2 id="preguntas-frecuentes">Preguntas frecuentes</h2>
+      <dl>
+        <dt>¿Cuándo debo usar la calculadora de tendencia en lugar de la calculadora clásica?</dt>
+        <dd>Úsala cuando tu investigación compara dos mediciones en el tiempo, por ejemplo el conocimiento de una
+          marca antes y después de una campaña. Si solo necesitas estimar una proporción en un único momento,
+          usa la <a href="calculadora-muestra.html">calculadora clásica de población finita o infinita</a>.</dd>
+        <dt>¿De dónde sale la fórmula que usa esta calculadora?</dt>
+        <dd>De la Guía Técnica C8-2 "Calculate a Sample Size" del manual del Banco Mundial <em>Making Monitoring
+            and Evaluation Systems Work</em> (Prestidge y Kusek, 2026), un estándar reconocido para el diseño de
+          estudios de seguimiento y evaluación.</dd>
+        <dt>¿Qué es el efecto de diseño (D) y cuándo debo cambiarlo?</dt>
+        <dd>Es un factor que compensa el uso de muestreos complejos, como el muestreo por conglomerados, en
+          lugar de muestreo aleatorio simple. Si tu encuesta selecciona personas al azar de toda la población,
+          usa D = 1.0; si encuestas por grupos completos (barrios, sucursales), usa un valor mayor, típicamente
+          entre 1.5 y 2.0.</dd>
+        <dt>¿Esta calculadora es gratuita y puedo usarla para mi tesis?</dt>
+        <dd>Sí, es gratuita, no requiere registro y puedes usarla libremente para diseñar la metodología de tu
+          tesis, artículo o trabajo de grado. En la sección <a href="#como-citar">"Cómo citar esta
+            calculadora"</a> encontrarás la referencia sugerida.</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2 id="como-citar">Cómo citar esta calculadora</h2>
+      <p>Si usas esta herramienta como apoyo metodológico en tu tesis, artículo o trabajo de grado, además de la
+        referencia al manual del Banco Mundial, puedes citar la aplicación web así (formato APA):</p>
+      <p class="citation">Loaiza Loaiza, J. A. (2026). <em>Calculadora de tamaño de muestra para estudios de
+          tendencia</em> [Aplicación web]. Portal académico de Jorge Ariel Loaiza.
+        <a href="https://arieljlj.github.io/calculadora-tendencias.html">https://arieljlj.github.io/calculadora-tendencias.html</a>
+      </p>
+      <p>Cítese en el texto como: <em>(Loaiza Loaiza, 2026)</em>.</p>
+    </section>
+
+    <section>
+      <h2 id="comparte">¿Le sirvió a un compañero de clase?</h2>
+      <p>Si esta calculadora te ayudó a diseñar tu estudio de seguimiento o de tendencia, compártela con tus
+        compañeros de universidad o de trabajo.</p>
+      <p class="share-buttons">
+        <a class="button" target="_blank" rel="noopener"
+          href="https://api.whatsapp.com/send?text=Calculadora%20gratis%20de%20tama%C3%B1o%20de%20muestra%20para%20estudios%20de%20tendencia%20(f%C3%B3rmula%20del%20Banco%20Mundial)%3A%20https%3A%2F%2Farieljlj.github.io%2Fcalculadora-tendencias.html">Compartir
+          por WhatsApp</a>
+        <a class="button secondary" target="_blank" rel="noopener"
+          href="https://twitter.com/intent/tweet?text=Calculadora%20gratis%20de%20tama%C3%B1o%20de%20muestra%20para%20estudios%20de%20tendencia%20(f%C3%B3rmula%20del%20Banco%20Mundial)&url=https%3A%2F%2Farieljlj.github.io%2Fcalculadora-tendencias.html">Compartir
+          en X</a>
+        <a class="button secondary" target="_blank" rel="noopener"
+          href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Farieljlj.github.io%2Fcalculadora-tendencias.html">Compartir
+          en LinkedIn</a>
+      </p>
     </section>
   </main>
   <footer>© 2026 Jorge Ariel Loaiza Loaiza · <a href="index.html">Inicio</a></footer>
